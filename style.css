@@ -151,3 +151,20 @@ input[type="checkbox"] {
         font-size: 15vw
     }
 }
+
+/* Initially hide the description */
+.todo-description {
+    display: none;
+    padding: 10px;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    margin-top: 10px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+/* When description is visible */
+.todo.show-description .todo-description {
+    display: block;
+}
+
